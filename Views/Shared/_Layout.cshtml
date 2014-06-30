@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <title>Auto Parts</title>
+    @*<link href="~/Content/style.css" rel="stylesheet" type="text/css" />*@
+    
+    <link href="~/Content/style.css" rel="stylesheet" type="text/css"/>
+
+</head>
+<body>
+    <div id="wrap">
+        <div class="header">
+            <div class="logo">
+                <a href="~/Home/index">
+                    <img src="~/Images/logo.gif" alt="" title="" border="0" />
+                </a>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li class="selected"><a href="~/Home/index"><b>Home</b></a></li>
+                    <li><a href="~/Home/about"><b>About Us</b></a></li>
+                    <li><a href="~/Home/category"><b>Parts</b></a></li>
+                    <li><a href="~/Home/specials"><b>Premium Parts</b></a></li>
+                    <li><a href="~/Home/myaccount"><b>My Accout</b></a></li>
+                    <li><a href="~/Home/register"><b>Register</b></a></li>
+                    <li><a href="~/Home/details"><b>Prices</b></a></li>
+                    <li><a href="~/Home/contact"><b>Contact</b></a></li>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+    
+
+        @RenderBody()
+    <div class="footer">
+        <div class="left_footer"><img src="~/Images/footer_logo.gif" alt="" title="" /><br /> <a href="http://csscreme.com/freecsstemplates/" title="free templates"><img src="~/Images/csscreme.gif" alt="free templates" title="free templates" border="0" /></a></div>
+        <div class="right_footer">
+            <a href="#">home</a>
+            <a href="#">about us</a>
+            <a href="#">services</a>
+            <a href="#">privacy policy</a>
+            <a href="#">contact us</a>
+
+        </div>
+
+
+    </div></div>
+
+        @Scripts.Render("~/bundles/jquery")
+        @RenderSection("scripts", required: false)
+</body>
+</html>
